@@ -5,7 +5,8 @@
   "scripts": {
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base dist",
     "test": "npm run test-react",
-    "test-react": "./node_modules/.bin/babel-node ./node_modules/.bin/mocha --require babel-core/register ./test --recursive --colors -R spec"
+    "test-react": "./node_modules/.bin/babel-node ./node_modules/.bin/mocha --require babel-core/register ./test --recursive --colors -R spec",
+    "build": "webpack --progress --colors --watch"
   },
   "author": "Rob Brennan <rob@therobbrennan.com>",
   "license": "ISC",
