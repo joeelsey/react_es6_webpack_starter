@@ -2,7 +2,6 @@
   "name": "react_es6_webpack_starter",
   "version": "0.0.0",
   "description": "A starting point for an ES6 React Webpack project",
-  "main": "webpack.config.js",
   "scripts": {
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base dist",
     "test": "npm run test-react",
