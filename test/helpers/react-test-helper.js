@@ -1,4 +1,3 @@
-import jsdom from 'jsdom'
 import TestUtils from 'react-addons-test-utils'
 
 function renderShallow (componentInstance) {
