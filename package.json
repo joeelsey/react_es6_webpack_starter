@@ -5,8 +5,8 @@
   "scripts": {
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base dist",
     "lint:standard": "./node_modules/standard/bin/cmd.js",
-    "test": "npm run lint:standard && npm run code-coverage",
-    "test:strict": "npm run code-coverage && ./node_modules/.bin/babel-node ./node_modules/babel-istanbul/lib/cli.js check-coverage --statement 100 --branch 100 --function 100",
+    "test": "npm run code-coverage",
+    "test:strict": "npm run lint:standard && npm run code-coverage && ./node_modules/.bin/babel-node ./node_modules/babel-istanbul/lib/cli.js check-coverage --statement 100 --branch 100 --function 100",
     "test:react": "./node_modules/.bin/babel-node ./node_modules/.bin/mocha --require babel-core/register ./test --recursive --colors -R spec",
     "code-coverage": "./node_modules/.bin/babel-node ./node_modules/babel-istanbul/lib/cli.js cover --dir ./public/coverage ./node_modules/.bin/_mocha -- ./test --recursive && echo Coverage report available at: \"file://$(pwd)/public/coverage/lcov-report/index.html\"",
     "build": "webpack --progress --colors --watch"
