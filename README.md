@@ -5,6 +5,8 @@ This project is meant to serve as a starting point for [Node.js](https://nodejs.
 
 [Mocha](https://mochajs.org) is used for unit-testing our sample [React](https://facebook.github.io/react/) application. There is a test folder that contains a sample unit test for the App component as well as a React test helper file that uses shallow rendering for testing simple components.
 
+Test coverage uses [babel-istanbul](https://www.npmjs.com/package/babel-istanbul) - a fork of the popular [Istanbul](https://www.npmjs.com/package/istanbul) code-coverage tool.
+
 ## Getting started
 This project assumes you are familiar with [Node.js](https://nodejs.org) and [npm](https://www.npmjs.com) (node package manager). If these are not installed on your system already, please do so before continuing on.
 
@@ -12,6 +14,17 @@ This project assumes you are familiar with [Node.js](https://nodejs.org) and [np
 After cloning this repo, you can install all necessary modules with:
 
     $ npm install
+
+### Unit Tests
+The goal of this application is to have 100% test coverage. We are using the popular [Istanbul](https://www.npmjs.com/package/istanbul) code-coverage tool. 
+
+  To run the unit tests for this project and generate a code coverage report:
+
+    $ npm test
+
+  BONUS: If you want to verify 100% code coverage of your unit tests with this project, run:
+
+    $ npm run test:strict
 
 ### Bundling and Running Your React Application
 If you are running this application for the first time, you can compile and view the sample application directly from your local environment with the built-in [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) by running:
