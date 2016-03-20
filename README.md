@@ -22,7 +22,7 @@ The goal of this application is to have 100% test coverage. We are using the pop
 
     $ npm test
 
-  **BONUS**: To verify 100% of your code is covered by testing:
+  **BONUS**: To verify 100% of your code is covered by testing and that [StandardJS](http://standardjs.com) formatting is present:
 
     $ npm run test:strict
 
